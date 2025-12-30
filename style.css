@@ -29,3 +29,44 @@ h1, h2, h3, h4, h5, h6
     color: var(--text-color);
     font-family: 'BBH Bartle', cursive;
 }
+
+nav
+{
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em
+}
+
+nav li:first-child
+{
+    margin-right: auto;
+    font-family: 'BBH Bartle', cursive;
+}
+
+nav a 
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+header, section
+{
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--base-color);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
