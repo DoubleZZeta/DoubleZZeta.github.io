@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+:root 
+{
+    --base-color: #af4c4c;
+    --text-color: #000000;
+    --primary-color: #0c4b9d;
+    --secondary-color: #f4f4f4;
+    --color-1: #333;
+    --color-2: #d02f27ed;
+    --color-3: #ea4722;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: Roboto,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color)
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--text-color);
+    font-family: 'BBH Bartle', cursive;
+}
