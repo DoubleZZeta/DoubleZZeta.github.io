@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 :root 
 {
-    --base-color: #af4c4c;
-    --text-color: #000000;
+    --base-color: #fe6565;
+    --text-color: #ffffff;
     --primary-color: #0c4b9d;
     --secondary-color: #f4f4f4;
     --color-1: #333;
@@ -27,7 +27,7 @@ html
 h1, h2, h3, h4, h5, h6
 {
     color: var(--text-color);
-    font-family: 'BBH Bartle', cursive;
+    font-family: Geneva, cursive;
 }
 
 nav
@@ -47,18 +47,20 @@ nav ul
 nav li:first-child
 {
     margin-right: auto;
-    font-family: 'BBH Bartle', cursive;
+    font-family: Geneva, cursive;
 }
 
 nav a 
 {
     text-decoration: none;
     color: var(--text-color);
+
 }
 
 nav a:hover
 {
     text-decoration: underline;
+    color: var(--primary-color);
 }
 
 header, section
@@ -70,3 +72,69 @@ header, section
     border-radius: 1em;
 }
 
+.flex-container
+{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+header img
+{
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-container
+{
+    flex: 0 1 34em;
+}
+
+h1 
+{
+    font-size: 2.5rem;
+}
+
+.text-container p
+{
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
+
+.download-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: .75em 1.5em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.download-btn:hover
+{
+    background-color: var(--color-1);
+}
+
+section
+{
+    padding: 3em min(2em , 15%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+section p
+{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
